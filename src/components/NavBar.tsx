@@ -19,7 +19,7 @@ export function NavBar() {
             <a href="/">Sobre</a>
           </li>
           <li>
-            <a href="/">Músicas</a>
+            <a href="/">Álbum</a>
           </li>
           <li>
             <a href="/">Agenda</a>
@@ -30,9 +30,15 @@ export function NavBar() {
         </ul>
       </div>
       <div className="content-sociais">
-        <a href="/"><FacebookLogo className="social-icons" size={32}  /></a>
-        <a href="/"><InstagramLogo className="social-icons" size={32} /></a>
-        <a href="/"><TwitterLogo className="social-icons" size={32} /></a>
+        <a href="https://www.facebook.com/thiagopethitoficial/?locale=pt_BR">
+          <FacebookLogo className="social-icons" size={32} />
+        </a>
+        <a href="https://www.instagram.com/thiagopethit/">
+          <InstagramLogo className="social-icons" size={32} />
+        </a>
+        <a href="https://twitter.com/thiagopethit/">
+          <TwitterLogo className="social-icons" size={32} />
+        </a>
       </div>
     </nav>
   );

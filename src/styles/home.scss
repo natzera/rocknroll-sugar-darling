@@ -196,7 +196,6 @@ section.agenda {
         line-height: 32px;
         color: $primary;
         margin: 40px 0px 10px;
-        font-weight: 400;
         text-transform: uppercase;
       }
 
@@ -206,6 +205,63 @@ section.agenda {
         color: $white;
         margin-bottom: 20px;
         text-transform: uppercase;
+      }
+    }
+  }
+}
+
+footer {
+  background: $black;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  div.container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    div.content-logo {
+      margin-bottom: 30px;
+
+      img {
+        width: 100px;
+      }
+    }
+
+    div.content-rights {
+
+      p {
+        color: $primary;
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 20px;
+        text-align: center;
+
+        a {
+          color: $primary;
+        }
+      }
+    }
+
+    div.content-sociais {
+      margin-bottom: 40px;
+
+      a {
+        padding: 0 10px;
+  
+        svg.social-icons {
+          color: $primary;
+        }
       }
     }
   }
