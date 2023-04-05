@@ -1,0 +1,51 @@
+@import './theme';
+
+nav {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+  background: $black;
+  width: 100%;
+  height: 80px;
+
+  div.content-logo {
+    img {
+      width: 90px;
+    }
+  }
+
+  div.content-navbar {
+    ul {
+      display: flex;
+
+      gap: 2rem;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li a {
+        color: $primary;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+
+        &:hover {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  div.content-sociais {
+    a {
+      padding: 0 10px;
+
+      svg.social-icons {
+        color: $primary;
+      }
+    }
+  }
+}

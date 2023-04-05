@@ -1,7 +1,11 @@
+import { NavBar } from "./components/NavBar";
+
+import './styles/_global.scss';
+
 function App() {
   return (
     <div className="App">
-      <p>Hello world</p>
+      <NavBar />
     </div>
   )
 }
