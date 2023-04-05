@@ -60,8 +60,25 @@ function App() {
               <p><a href="https://music.apple.com/br/album/rocknroll-sugar-darling/926072778" target="_blank">Apple Music</a></p>
               <p><a href="https://open.spotify.com/album/5ATg9GTiStPN3EfGW557Ju" target="_blank">Spotify</a></p>
               <p><a href="https://www.deezer.com/br/album/8986555" target="_blank">Deezer</a></p>
-
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="agenda">
+        <div className="container">
+          <h1>Agenda 2017</h1>
+
+          <div className="agenda-content">
+            <h2>Janeiro</h2>
+            <p>11 / Janeiro - Bauru SP<br/>@ Sesc Bauru 21h</p>
+            <p>20 / Janeiro - Bauru SP<br/>@ Part. Especial no show de Juliana Kehl no Sesc Pompeia 21h</p>
+
+            <h2>Fevereiro</h2>
+            <p>04 / Fevereiro - São Paulo SP<br/>@ Sesc Consolação 21h</p>
+
+            <h2>Março</h2>
+            <p>18 / Março - Serra ES<br/>@ Centro Cultural Eliziario Rangel 20h</p>
           </div>
         </div>
       </section>
