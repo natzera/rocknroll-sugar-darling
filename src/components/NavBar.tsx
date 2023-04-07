@@ -16,16 +16,16 @@ export function NavBar() {
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/">Sobre</a>
+            <a href="#sobre">Sobre</a>
           </li>
           <li>
-            <a href="/">Álbum</a>
+            <a href="#album">Álbum</a>
           </li>
           <li>
-            <a href="/">Agenda</a>
+            <a href="#agenda">Agenda</a>
           </li>
           <li>
-            <a href="/">Contatos</a>
+            <a href="#footer">Contatos</a>
           </li>
         </ul>
       </div>

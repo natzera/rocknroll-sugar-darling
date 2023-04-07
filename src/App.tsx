@@ -21,7 +21,7 @@ function App() {
         <img src={logo} />
       </section>
 
-      <section className="sobre">
+      <section className="sobre" id="sobre">
         <div className="container">
           <div className="sobre-content">
             <Title
@@ -35,7 +35,7 @@ function App() {
         </div>
       </section>
 
-      <section className="musicas">
+      <section className="musicas" id="album">
         <div className="container">
           <Title
             name="Álbum"
@@ -76,7 +76,7 @@ function App() {
         </div>
       </section>
 
-      <section className="agenda">
+      <section className="agenda" id="agenda">
         <div className="container">
           <Title
             name="Agenda 2017"
@@ -102,7 +102,7 @@ function App() {
         </div>
       </section>
 
-      <footer>
+      <footer id="footer">
         <div className="container">
           <div className="content-logo">
             <img src={logo} />
