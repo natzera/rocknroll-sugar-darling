@@ -107,14 +107,6 @@ section.musicas {
 
       div.faixas-content {
 
-        h2 {
-          font-size: 24px;
-          line-height: 32px;
-          color: $primary;
-          text-transform: uppercase;
-          margin-bottom: 20px;
-        }
-
         p {
           color: $white;
           font-size: 16px;
@@ -188,7 +180,7 @@ section.agenda {
 
 footer {
   background: $black;
-  height: 500px;
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
