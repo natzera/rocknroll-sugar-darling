@@ -7,8 +7,10 @@ import logo from './assets/logo-pethit.png';
 import covercd from './assets/cd-thiago-pethit.jpg';
 
 import './styles/home.scss';
-import './styles/title.scss'
+import './styles/title.scss';
+import './styles/subtitle.scss'
 import './styles/_global.scss';
+import { Subtitle } from './components/Subtitle';
 
 function App() {
   return (
@@ -26,9 +28,9 @@ function App() {
               name="Rock'n'Roll Sugar Darling"
               isDark
             />
-            <h2>Little Joe deu mais de um passeio pelo lado selvagem de Nova York, como cantou Lou Reed em “Walk on the Wild Side”. Então, se ele, Joe Dallessandro, o ator queridinho de Andy Warhol, pede em uma introdução especialmente gravada para Pethit que prestemos atenção no novo disco do cantor, é bom levar Rock'n'Roll Sugar Darling em conta. O terceiro álbum do músico e ator é um passo ousado em direção ao glam e até ao punk (a referência dos Stooges está bem clara em “Quero Ser Seu Cão”). O disco alterna entre a malícia da faixa-título – “Doce como açúcar, explode na sua boca, vem chupar meu rock and roll” –, os amores intensos de “Romeo” e as despedidas doloridas da excelente “De Trago em Trago”.</h2>
+            <p>Little Joe deu mais de um passeio pelo lado selvagem de Nova York, como cantou Lou Reed em “Walk on the Wild Side”. Então, se ele, Joe Dallessandro, o ator queridinho de Andy Warhol, pede em uma introdução especialmente gravada para Pethit que prestemos atenção no novo disco do cantor, é bom levar Rock'n'Roll Sugar Darling em conta. O terceiro álbum do músico e ator é um passo ousado em direção ao glam e até ao punk (a referência dos Stooges está bem clara em “Quero Ser Seu Cão”). O disco alterna entre a malícia da faixa-título – “Doce como açúcar, explode na sua boca, vem chupar meu rock and roll” –, os amores intensos de “Romeo” e as despedidas doloridas da excelente “De Trago em Trago”.</p>
 
-            <p>Pedro Antunes Publicado em 24/11/2014, às 12h05 - Atualizado em 23/02/2015, às 18h28.<br /> <a href="https://rollingstone.uol.com.br/guia-cd/rocknroll-sugar-darling/" target="_blank">https://rollingstone.uol.com.br/guia-cd/rocknroll-sugar-darling/</a></p>
+            <span>Pedro Antunes Publicado em 24/11/2014, às 12h05 - Atualizado em 23/02/2015, às 18h28.<br /> <a href="https://rollingstone.uol.com.br/guia-cd/rocknroll-sugar-darling/" target="_blank">https://rollingstone.uol.com.br/guia-cd/rocknroll-sugar-darling/</a></span>
           </div>
         </div>
       </section>
@@ -46,7 +48,9 @@ function App() {
             </div>
 
             <div className="faixas-content">
-              <h3>Faixas</h3>
+              <Subtitle
+                name="Faixas"
+              />
               <p>1. Intro</p>
               <p>2. Rock'n'Roll Sugar Darling</p>
               <p>3. Romeo</p>
@@ -61,7 +65,9 @@ function App() {
             </div>
 
             <div className="ouca-content">
-              <h3>Ouça</h3>
+              <Subtitle
+                name="Ouça"
+              />
               <p><a href="https://music.apple.com/br/album/rocknroll-sugar-darling/926072778" target="_blank">Apple Music</a></p>
               <p><a href="https://open.spotify.com/album/5ATg9GTiStPN3EfGW557Ju" target="_blank">Spotify</a></p>
               <p><a href="https://www.deezer.com/br/album/8986555" target="_blank">Deezer</a></p>
@@ -77,14 +83,20 @@ function App() {
           />
 
           <div className="agenda-content">
-            <h2>Janeiro</h2>
+            <Subtitle
+              name="Janeiro"
+            />
             <p>11 / Janeiro - Bauru SP<br/>@ Sesc Bauru 21h</p>
             <p>20 / Janeiro - Bauru SP<br/>@ Part. Especial no show de Juliana Kehl no Sesc Pompeia 21h</p>
 
-            <h2>Fevereiro</h2>
+            <Subtitle
+              name="Fevereiro"
+            />
             <p>04 / Fevereiro - São Paulo SP<br/>@ Sesc Consolação 21h</p>
 
-            <h2>Março</h2>
+            <Subtitle
+              name="Março"
+            />
             <p>18 / Março - Serra ES<br/>@ Centro Cultural Eliziario Rangel 20h</p>
           </div>
         </div>
