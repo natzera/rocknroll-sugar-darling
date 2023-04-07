@@ -41,7 +41,7 @@ section.sobre {
       width: 740px;
       height: auto;
     
-      h2 {
+      p {
         font-size: 18px;
         line-height: 32px;
         color: $black;
@@ -50,7 +50,7 @@ section.sobre {
         text-align: justify;
       }
   
-      p {
+      span {
         font-size: 12px;
         line-height: 18px;
         color: $black;
@@ -107,7 +107,7 @@ section.musicas {
 
       div.faixas-content {
 
-        h3 {
+        h2 {
           font-size: 24px;
           line-height: 32px;
           color: $primary;
@@ -164,7 +164,7 @@ section.agenda {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
     div.agenda-content {
 
       h2 {
