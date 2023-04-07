@@ -2,6 +2,7 @@ import { FacebookLogo, InstagramLogo, TwitterLogo } from 'phosphor-react';
 
 import { NavBar } from "./components/NavBar";
 import { Title } from './components/Ttile';
+import { Subtitle } from './components/Subtitle';
 
 import logo from './assets/logo-pethit.png';
 import covercd from './assets/cd-thiago-pethit.jpg';
@@ -10,14 +11,14 @@ import './styles/home.scss';
 import './styles/title.scss';
 import './styles/subtitle.scss'
 import './styles/_global.scss';
-import { Subtitle } from './components/Subtitle';
+
 
 function App() {
   return (
     <div className="App">
       <NavBar />
 
-      <section className="home">
+      <section className="home" id="home">
         <img src={logo} />
       </section>
 

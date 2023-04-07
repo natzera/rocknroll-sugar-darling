@@ -1,4 +1,5 @@
 import { FacebookLogo, InstagramLogo, TwitterLogo } from 'phosphor-react';
+import { Link } from 'react-scroll';
  
 import logo from '../assets/logo-pethit.png';
 
@@ -13,19 +14,19 @@ export function NavBar() {
       <div className="content-navbar">
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link to="home" spy={true} smooth={true} offset={0} duration={500}>Home</Link>
           </li>
           <li>
-            <a href="#sobre">Sobre</a>
+            <Link to="sobre" spy={true} smooth={true} offset={0} duration={500}>Sobre</Link>
           </li>
           <li>
-            <a href="#album">Álbum</a>
+            <Link to="album" spy={true} smooth={true} offset={0} duration={500}>Álbum</Link>
           </li>
           <li>
-            <a href="#agenda">Agenda</a>
+            <Link to="agenda" spy={true} smooth={true} offset={0} duration={500}>Agenda</Link>
           </li>
           <li>
-            <a href="#footer">Contatos</a>
+            <Link to="footer" spy={true} smooth={true} offset={0} duration={500}>Contatos</Link>
           </li>
         </ul>
       </div>
