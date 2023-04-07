@@ -3,7 +3,11 @@
 h1 {
   font-size: 48px;
   line-height: 64px;
-  color: $black;
+  color: $primary;
   text-transform: uppercase;
   margin-bottom: 20px;
+
+  &.dark {
+    color: $black;
+  }
 }

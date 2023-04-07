@@ -1,9 +1,12 @@
 interface TitleProps {
   name: string
+  isDark?: boolean
 } 
 
-export function Title(props: TitleProps) {
+export function Title({ name, isDark = false } : TitleProps) {
   return(
-    <h1>{props.name}</h1>
+    <h1 className={`button ${isDark ? 'dark' : ''}`}>
+      {name}
+    </h1>
   );
 }
