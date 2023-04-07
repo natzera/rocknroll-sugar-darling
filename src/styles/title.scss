@@ -1,0 +1,9 @@
+@import './theme';
+
+h1 {
+  font-size: 48px;
+  line-height: 64px;
+  color: $black;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}

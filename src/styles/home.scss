@@ -40,14 +40,6 @@ section.sobre {
     div.sobre-content {
       width: 740px;
       height: auto;
-  
-      h1 {
-        font-size: 48px;
-        line-height: 64px;
-        color: $black;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-      }
     
       h2 {
         font-size: 18px;
@@ -91,14 +83,6 @@ section.musicas {
     justify-content: center;
     z-index: 1;
     position: relative;
-
-    h1 {
-      font-size: 48px;
-      line-height: 64px;
-      color: $primary;
-      text-transform: uppercase;
-      margin-bottom: 60px;
-    }
 
     div.content {
       display: flex;
@@ -180,15 +164,7 @@ section.agenda {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    h1 {
-      font-size: 48px;
-      line-height: 64px;
-      color: $primary;
-      text-transform: uppercase;
-      margin-bottom: 60px;
-    }
-
+    
     div.agenda-content {
 
       h2 {
