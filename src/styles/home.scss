@@ -23,6 +23,19 @@ section.home {
       width: 400px;
     }
   }
+
+  @include mobile {
+    img {
+      width: 300px;
+    }
+  }
+
+  @include mobile-sm {
+    img {
+      width: 260px;
+    }
+  }
+
 }
 
 section.sobre {
@@ -40,6 +53,10 @@ section.sobre {
   justify-content: center;
   align-items: flex-start;
 
+  @include tablet {
+    background-image: none;
+  }
+
   div.container {
     max-width: 1920px;
     width: 100%;
@@ -48,6 +65,11 @@ section.sobre {
     div.sobre-content {
       width: 740px;
       height: auto;
+
+      @include tablet {
+        width: 100%;
+        padding: 0 30px;
+      }
     
       p {
         font-size: 18px;
@@ -56,12 +78,22 @@ section.sobre {
         margin-bottom: 20px;
         font-weight: 400;
         text-align: justify;
+
+        @include mobile-sm {
+          font-size: 14px;
+          line-height: 24px;
+        }
       }
   
       span {
         font-size: 12px;
         line-height: 18px;
         color: $black;
+
+        @include mobile-sm {
+          font-size: 10px;
+          line-height: 12px;
+        }
   
         a {
           color: $black;
@@ -81,6 +113,10 @@ section.musicas {
   background-position: center;
   background-position-x: center;
 
+  @include mobile {
+    background-position-x: right;
+  }
+
   div.container {
     max-width: 1920px;
     width: 100%;
@@ -91,17 +127,34 @@ section.musicas {
     justify-content: center;
     position: relative;
 
+    @include tablet {
+      padding: 0 30px;
+    }
+
     div.content {
       display: flex;
       align-items: flex-start;
       justify-content: space-evenly;
 
+      @include tablet {
+        justify-content: space-around;
+      }
+
+      @include mobile {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+  
       div.cd-content {
         display: flex;
         flex-direction: column;
 
         img {
           width: 250px;
+
+          @include mobile {
+            width: 180px;
+          }
         }
 
         span {
@@ -109,6 +162,11 @@ section.musicas {
           font-size: 14px;
           line-height: 18px;
           padding-top: 10px;
+
+          @include mobile-sm {
+            font-size: 12px;
+            line-height: 18px;
+          }
         }
       }
 
@@ -118,22 +176,23 @@ section.musicas {
           color: $white;
           font-size: 16px;
           line-height: 24px;
+
+          @include mobile-sm {
+            font-size: 14px;
+            line-height: 24px;
+          }
         }
       }
 
       div.ouca-content {
-
-        h3 {
-          font-size: 24px;
-          line-height: 32px;
-          color: $primary;
-          text-transform: uppercase;
-          margin-bottom: 20px;
-        }
-
         p {
           font-size: 16px;
           line-height: 24px;
+
+          @include mobile-sm {
+            font-size: 14px;
+            line-height: 24px;
+          }
 
           a {
             text-decoration: none;
@@ -155,6 +214,10 @@ section.agenda {
   background-position: center;
   background-position-x: center;
 
+  @include tablet {
+    background-position-x: left;
+  }
+
   div.container {
     max-width: 1920px;
     width: 100%;
@@ -164,22 +227,22 @@ section.agenda {
     flex-direction: column;
     justify-content: center;
 
+    @include tablet {
+      padding: 0 30px;
+    }
+
     div.agenda-content {
-
-      h2 {
-        font-size: 24px;
-        line-height: 32px;
-        color: $primary;
-        margin: 40px 0px 10px;
-        text-transform: uppercase;
-      }
-
       p {
         font-size: 16px;
         line-height: 24px;
         color: $white;
         margin-bottom: 20px;
         text-transform: uppercase;
+
+        @include mobile-sm {
+          font-size: 14px;
+          line-height: 24px;
+        }
       }
     }
   }
@@ -199,6 +262,10 @@ footer {
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
+
+    @include tablet {
+      padding: 0 30px;
+    }
 
     display: flex;
     flex-direction: column;
