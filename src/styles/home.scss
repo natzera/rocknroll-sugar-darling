@@ -164,9 +164,10 @@ section.musicas {
         justify-content: space-around;
       }
 
-      @include mobile {
-        flex-direction: column;
-        gap: 1.5rem;
+      @include mobile {     
+        gap: 3rem;
+        flex-flow: wrap;
+        justify-content: flex-start;
       }
   
       div.cd-content {
