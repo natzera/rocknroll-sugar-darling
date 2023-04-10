@@ -1,4 +1,5 @@
 @import './theme';
+@import './media-queries';
 
 nav {
   display: flex;
@@ -14,13 +15,27 @@ nav {
   z-index: 1;
   transition: .3 ease-in;
 
+  @include tablet {
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+
   div.content-logo {
     img {
       width: 90px;
+
+      @include mobile {
+        width: 80px;
+      }
     }
   }
 
   div.content-navbar {
+    @include tablet {
+      display: none;
+    }
+
     ul {
       display: flex;
 
@@ -46,12 +61,28 @@ nav {
   }
 
   div.content-sociais {
+    @include tablet {
+      display: none;
+    }
+
     a {
       padding: 0 10px;
 
       svg.social-icons {
         color: $primary;
       }
+    }
+  }
+
+  div.content-mobile {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+
+    svg.list-icons {
+      color: $primary;
     }
   }
 }

@@ -1,4 +1,4 @@
-import { FacebookLogo, InstagramLogo, TwitterLogo } from 'phosphor-react';
+import { FacebookLogo, InstagramLogo, TwitterLogo, List } from 'phosphor-react';
 import { Link } from 'react-scroll';
  
 import logo from '../assets/logo-pethit.png';
@@ -40,6 +40,9 @@ export function NavBar() {
         <a href="https://twitter.com/thiagopethit/">
           <TwitterLogo className="social-icons" size={32} />
         </a>
+      </div>
+      <div className="content-mobile">
+        <List className="list-icons" size={32} />
       </div>
     </nav>
   );
