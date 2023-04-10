@@ -16,16 +16,24 @@ section.home {
    margin-top: 100px;
   }
 
-  @include tablet {
+  @include laptop-lg {
     background-position: center;
-  
+
     img {
-      width: 400px;
+      width: 500px;
+    }
+  }
+
+  @include laptop {
+    img {
+      width: 500px;
     }
   }
 
   @include mobile {
+
     img {
+      margin-top: 230px;
       width: 300px;
     }
   }
@@ -53,7 +61,12 @@ section.sobre {
   justify-content: center;
   align-items: flex-start;
 
-  @include tablet {
+  @include laptop-lg {
+    background-size: 1000px;
+    background-position-x: right;
+  }
+
+  @include laptop {
     background-image: none;
   }
 
@@ -66,8 +79,15 @@ section.sobre {
       width: 740px;
       height: auto;
 
-      @include tablet {
+      @include laptop-lg {
+        padding: 0 60px;
+      }
+
+      @include laptop {
         width: 100%;
+      }
+
+      @include mobile {
         padding: 0 30px;
       }
     
@@ -127,7 +147,11 @@ section.musicas {
     justify-content: center;
     position: relative;
 
-    @include tablet {
+    @include laptop-lg {
+      padding: 0 60px;
+    }
+
+    @include mobile {
       padding: 0 30px;
     }
 
@@ -227,7 +251,11 @@ section.agenda {
     flex-direction: column;
     justify-content: center;
 
-    @include tablet {
+    @include laptop-lg {
+      padding: 0 60px;
+    }
+
+    @include mobile {
       padding: 0 30px;
     }
 
@@ -263,7 +291,11 @@ footer {
     width: 100%;
     margin: 0 auto;
 
-    @include tablet {
+    @include laptop-lg {
+      padding: 0 60px;
+    }
+
+    @include mobile {
       padding: 0 30px;
     }
 
