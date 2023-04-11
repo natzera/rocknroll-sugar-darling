@@ -12,3 +12,6 @@ Infelizmente, não encontrei o código simples em HTML, CSS e JavaScript que hav
 
 Depois de seis anos, eu resolvi refazer essa aplicação.
 <img src="./public/screencapture.png" />
+
+## Mas o que é Rock'n'roll Sugar Darling?
+Rock'n'roll Sugar Darling é o terceiro álbum do músico e ator Thiago Pethit.
