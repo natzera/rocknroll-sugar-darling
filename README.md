@@ -15,3 +15,8 @@ Depois de seis anos, eu resolvi refazer essa aplicação.
 
 ## Mas o que é Rock'n'roll Sugar Darling?
 Rock'n'roll Sugar Darling é o terceiro álbum do músico e ator Thiago Pethit.
+
+## Tecnologias
+- React with Vite
+- Typescript
+- Sass
