@@ -5,6 +5,7 @@ import { Title } from './components/Ttile';
 import { Subtitle } from './components/Subtitle';
 
 import { MUSICS } from './utils/musics';
+import { STREAMINGS } from './utils/streamings';
 
 import logo from './assets/logo-pethit.png';
 import covercd from './assets/cd-thiago-pethit.jpg';
@@ -14,12 +15,19 @@ import './styles/title.scss';
 import './styles/subtitle.scss'
 import './styles/_global.scss';
 
-interface Music {
-  id: string
-  name: string
-}
+interface DATA {
+  music: {
+    id: string
+    name: string
+  },
+  streaming: {
+    id: string
+    name: string
+    link:  string
+  }
+} 
 
-function App({}: Music) {
+function App({...rest}: DATA) {
   return (
     <div className="App">
       <NavBar />
@@ -60,7 +68,7 @@ function App({}: Music) {
               />
               {MUSICS.map(music => {
                 return(
-                  <p>{music.id}. {music.name}</p>
+                  <p key={music.id}>{music.id}. {music.name}</p>
                 )
               })}
             </div>
@@ -69,9 +77,12 @@ function App({}: Music) {
               <Subtitle
                 name="Ouça"
               />
-              <p><a href="https://music.apple.com/br/album/rocknroll-sugar-darling/926072778" target="_blank">Apple Music</a></p>
-              <p><a href="https://open.spotify.com/album/5ATg9GTiStPN3EfGW557Ju" target="_blank">Spotify</a></p>
-              <p><a href="https://www.deezer.com/br/album/8986555" target="_blank">Deezer</a></p>
+
+              {STREAMINGS.map((streaming) => {
+                return(
+                  <p key={streaming.id}><a href={streaming.link} target="_blank">{streaming.name}</a></p>
+                )
+              })}
             </div>
           </div>
         </div>
