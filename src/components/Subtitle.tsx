@@ -1,3 +1,5 @@
+import '../styles/subtitle.scss';
+
 interface SubtitleProps {
   name?: string
 }
