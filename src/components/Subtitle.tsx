@@ -1,5 +1,5 @@
 interface SubtitleProps {
-  name: string
+  name?: string
 }
 
 export function Subtitle(props: SubtitleProps) {
