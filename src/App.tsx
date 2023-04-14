@@ -6,6 +6,7 @@ import { Subtitle } from './components/Subtitle';
 
 import { MUSICS } from './utils/musics';
 import { STREAMINGS } from './utils/streamings';
+import { SHOWS } from './utils/shows';
 
 import logo from './assets/logo-pethit.png';
 import covercd from './assets/cd-thiago-pethit.jpg';
@@ -24,10 +25,16 @@ interface DATA {
     id: string
     name: string
     link:  string
+  },
+  show: {
+    id: string,
+    month?: string,
+    info: string,
+    local: string
   }
 } 
 
-function App({...rest}: DATA) {
+function App({}: DATA) {
   return (
     <div className="App">
       <NavBar />
@@ -95,21 +102,17 @@ function App({...rest}: DATA) {
           />
 
           <div className="agenda-content">
-            <Subtitle
-              name="Janeiro"
-            />
-            <p>11 / Janeiro - Bauru SP<br/>@ Sesc Bauru 21h</p>
-            <p>20 / Janeiro - Bauru SP<br/>@ Part. Especial no show de Juliana Kehl no Sesc Pompeia 21h</p>
+            {SHOWS.map((show) => {
+              return(
+                <>
+                  <Subtitle
+                    name={show.month}
+                  />
 
-            <Subtitle
-              name="Fevereiro"
-            />
-            <p>04 / Fevereiro - São Paulo SP<br/>@ Sesc Consolação 21h</p>
-
-            <Subtitle
-              name="Março"
-            />
-            <p>18 / Março - Serra ES<br/>@ Centro Cultural Eliziario Rangel 20h</p>
+                  <p>{show.info}<br/>{show.local}</p>
+                </>
+              )
+            })}
           </div>
         </div>
       </section>

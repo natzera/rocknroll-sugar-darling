@@ -5,7 +5,7 @@ export const MUSICS = [
   },
   {
     id: '2',
-    name: 'RocknRoll Sugar Darling'
+    name: 'Rock\'n\'Roll Sugar Darling'
   },
   {
     id: '3',
@@ -43,6 +43,4 @@ export const MUSICS = [
     id: '11',
     name: 'Story In Blue'
   },
-
-
 ]
