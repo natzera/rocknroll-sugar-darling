@@ -1,3 +1,5 @@
+import '../styles/title.scss';
+
 interface TitleProps {
   name: string
   isDark?: boolean
