@@ -5,6 +5,35 @@ import logo from '../assets/logo-pethit.png';
 
 import '../styles/navbar.scss';
 
+export const NAVITEMS = [
+  {
+    id: '1',
+    name: 'Home',
+    path: 'home'
+  },
+  {
+    id: '2',
+    name: 'Sobre',
+    path: 'sobre'
+  },
+  {
+    id: '3',
+    name: 'Álbum',
+    path: 'album'
+  },
+  {
+    id: '4',
+    name: 'Agenda',
+    path: 'agenda'
+  },
+  {
+    id: '5',
+    name: 'Contatos',
+    path: 'footer'
+  },
+
+]
+
 export function NavBar() {
   return(
     <nav>
@@ -13,21 +42,13 @@ export function NavBar() {
       </div>
       <div className="content-navbar">
         <ul>
-          <li>
-            <Link to="home" spy={true} smooth={true} offset={0} duration={500}>Home</Link>
-          </li>
-          <li>
-            <Link to="sobre" spy={true} smooth={true} offset={0} duration={500}>Sobre</Link>
-          </li>
-          <li>
-            <Link to="album" spy={true} smooth={true} offset={0} duration={500}>Álbum</Link>
-          </li>
-          <li>
-            <Link to="agenda" spy={true} smooth={true} offset={0} duration={500}>Agenda</Link>
-          </li>
-          <li>
-            <Link to="footer" spy={true} smooth={true} offset={0} duration={500}>Contatos</Link>
-          </li>
+          {NAVITEMS.map((item) => {
+            return(
+              <li>
+                <Link key={item.id} to={item.path} spy={true} smooth={true} offset={0} duration={500}>{item.name}</Link>
+              </li>
+            )
+          })}
         </ul>
       </div>
       <div className="content-sociais">
