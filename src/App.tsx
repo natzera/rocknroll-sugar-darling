@@ -4,6 +4,8 @@ import { NavBar } from "./components/NavBar";
 import { Title } from './components/Ttile';
 import { Subtitle } from './components/Subtitle';
 
+import { MUSICS } from './utils/musics';
+
 import logo from './assets/logo-pethit.png';
 import covercd from './assets/cd-thiago-pethit.jpg';
 
@@ -12,8 +14,12 @@ import './styles/title.scss';
 import './styles/subtitle.scss'
 import './styles/_global.scss';
 
+interface Music {
+  id: string
+  name: string
+}
 
-function App() {
+function App({}: Music) {
   return (
     <div className="App">
       <NavBar />
@@ -52,17 +58,11 @@ function App() {
               <Subtitle
                 name="Faixas"
               />
-              <p>1. Intro</p>
-              <p>2. Rock'n'Roll Sugar Darling</p>
-              <p>3. Romeo</p>
-              <p>4. Quero ser Seu Cão</p>
-              <p>5. Save The Last Dance</p>
-              <p>6. De Trago Em Trago</p>
-              <p>7. 1992</p>
-              <p>8. Honey Bi</p>
-              <p>9. Voodoo</p>
-              <p>10. Perdedor</p>
-              <p>11. Story In Blue</p>
+              {MUSICS.map(music => {
+                return(
+                  <p>{music.id}. {music.name}</p>
+                )
+              })}
             </div>
 
             <div className="ouca-content">
