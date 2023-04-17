@@ -48,7 +48,7 @@ export function NavBar() {
           {NAVITEMS.map((item) => {
             return(
               <li>
-                <Link key={item.id} to={item.path} spy={true} smooth={true} offset={0} duration={500}>{item.name}</Link>
+                <Link onClick={() => setMobile(false)} key={item.id} to={item.path} spy={true} smooth={true} offset={0} duration={500}>{item.name}</Link>
               </li>
             )
           })}
