@@ -15,16 +15,16 @@ import './styles/_global.scss';
 
 
 interface DATA {
-  music: {
+  music?: {
     id: string
     name: string
   },
-  streaming: {
+  streaming?: {
     id: string
     name: string
     link:  string
   },
-  show: {
+  show?: {
     id: string,
     month?: string,
     info: string,
