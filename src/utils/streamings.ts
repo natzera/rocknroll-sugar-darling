@@ -13,5 +13,5 @@ export const STREAMINGS = [
     id: '3',
     name: 'Deezer',
     link: 'https://www.deezer.com/br/album/8986555'
-  }
+  },
 ]
