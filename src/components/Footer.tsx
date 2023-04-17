@@ -25,8 +25,8 @@ export function Footer() {
           </div>
 
           <div className="content-rights">
-            <p>PETHIT<br/>
-            Art direction & design for independent artist Thiago Pethit 3rd album<br/> Rock'n'Roll Sugar Darling. Listen to his music <a href="https://cargocollective.com/pedroinoue/Pethit-Rock-n-Roll-Sugar-Darling" target="_blank">here</a>.</p>
+            <p>PEDRO INOUE<br/>
+            Art direction & design for independent artist Thiago Pethit 3rd album<br/> Rock'n'Roll Sugar Darling. See to his art <a href="https://cargocollective.com/pedroinoue/Pethit-Rock-n-Roll-Sugar-Darling" target="_blank">here</a>.</p>
           </div>
 
           <div className="content-rights">
