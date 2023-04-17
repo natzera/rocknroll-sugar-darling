@@ -32,7 +32,6 @@ export const NAVITEMS = [
     name: 'Contatos',
     path: 'footer'
   },
-
 ]
 
 export function NavBar() {
