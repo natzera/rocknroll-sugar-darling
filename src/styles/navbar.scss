@@ -37,18 +37,14 @@ nav {
   }
 
   div.content-navbar {
-    @include tablet {
-      display: none;
-    }
-
-    ul {
+    ul.nav-desktop {
       display: flex;
 
       gap: 2rem;
       padding: 0;
       margin: 0;
       list-style: none;
-
+     
       li a {
         color: $primary;
         text-decoration: none;
@@ -62,6 +58,45 @@ nav {
           border-bottom: 2px solid $primary;
         }
       }
+
+      @include tablet {
+        display: none;
+      }
+    }
+
+    ul.navbar-mobile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: all 0.5s ease-in-out;
+      width: 100%;
+      background-color: rgba(0,0,0,.9);
+      height: 100vh;
+      gap: 1.5rem;
+      list-style: none;
+
+      @include tablet {
+        li a {
+          color: $primary;
+          font-size: 24px;
+          line-height: 32px;
+        }
+      }
+
+      @include mobile {
+        li a {
+          color: $primary;
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+
+      
     }
   }
 
@@ -82,12 +117,19 @@ nav {
   div.content-mobile {
     display: none;
 
+    button {
+      border: none;
+      background: none;
+    }
+
     @include tablet {
       display: block;
     }
 
     svg.list-icons {
       color: $primary;
+      z-index: 1;
+      position: relative;
 
       @include mobile {
         width: 24px;

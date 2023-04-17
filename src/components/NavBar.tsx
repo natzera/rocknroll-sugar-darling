@@ -1,4 +1,5 @@
-import { FacebookLogo, InstagramLogo, TwitterLogo, List } from 'phosphor-react';
+import { useState } from 'react';
+import { FacebookLogo, InstagramLogo, TwitterLogo, List, X } from 'phosphor-react';
 import { Link } from 'react-scroll';
  
 import logo from '../assets/logo-pethit.png';
@@ -35,13 +36,15 @@ export const NAVITEMS = [
 ]
 
 export function NavBar() {
+  const [mobile, setMobile] = useState(false);
+
   return(
     <nav>
       <div className="content-logo">
         <img src={logo} />
       </div>
       <div className="content-navbar">
-        <ul>
+        <ul className={mobile ? 'navbar-mobile' : 'nav-desktop'} onClick={() => setMobile(false)}>
           {NAVITEMS.map((item) => {
             return(
               <li>
@@ -63,7 +66,9 @@ export function NavBar() {
         </a>
       </div>
       <div className="content-mobile">
-        <List className="list-icons" size={32} />
+        <button onClick={() => setMobile(!mobile)}>
+          {mobile ? <X className="list-icons" size={32} /> : <List className="list-icons" size={32} />}
+        </button>
       </div>
     </nav>
   );
