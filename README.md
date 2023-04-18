@@ -63,5 +63,5 @@ To start it, follow the steps below:
 $ npm install
 
 # Start the project
-$ npm run start
+$ npm run dev
 ```
