@@ -1,22 +1,19 @@
 # Rock'n'roll Sugar Darling
 
-Esse aplicação é muito especial para mim porque foi o primeiro projeto que criei do zero. Em 2016, consegui uma bolsa para estudar no Senac Lapa Scipião no curso técnico de produção e multimídia. Como conclusão do módulo de Programação, tivemos que desenvolver o layout e o código do projeto.
+This application is very **special** for me because it was my first project that I created from scratch. In 2016, I won a studentship to study Production and Multimedia Technician at Senac Lapa Scipião and to conclude the Programming module, we had to develop and code this project.
 
-Na época, cheguei a desenvolver este layout:
+At that time, I developed this layout using Adobe Photoshop *(It's clear to realize that I had no notion of UI and UX, but I was really learning)*:
 
 <img src="./public/0f999978586015.5ca93be5a36ef.png" />
 
-Você pode conferir o layout no Behance: https://www.behance.net/gallery/78586015/SITE-THIAGO-PETHIT-2017
+You can check my old layout on Behance [here](https://www.behance.net/gallery/78586015/SITE-THIAGO-PETHIT-2017). 
 
-Infelizmente, não encontrei o código simples em HTML, CSS e JavaScript que havia desenvolvido na época, porém, esse site foi o ponto crucial para que eu começasse a me apaixonar por desenvolvimento e programação, e desde então, nunca mais parei.Hoje, trabalho com desenvolvimento graças a esse projeto.
+Unfortunately, I didn't find the code that I had developed in HTML, CSS and JavaScript, however, this project was the crucial point for me to start falling in love with development and programming, and since then I have never stopped. After six years, I decided to remake this application with new layout, new code and tecnologies. 
 
-Depois de seis anos, eu resolvi refazer essa aplicação.
-<img src="./public/screencapture.png" />
+## But, what is Rock'n'roll Sugar Darling?
+Rock'n'roll Sugar Darling is the third album by musician and actor [Thiago Pethit](https://pt.wikipedia.org/wiki/Thiago_Pethit).
 
-## Mas o que é Rock'n'roll Sugar Darling?
-Rock'n'roll Sugar Darling é o terceiro álbum do músico e ator Thiago Pethit.
-
-## Tecnologias
-- React with Vite
+## Tecnologies
+- React and Vite
 - Typescript
 - Sass
