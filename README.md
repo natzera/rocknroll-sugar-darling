@@ -7,7 +7,7 @@ This application is very **special** for me because it was my first project that
 
 At that time, I developed this layout using Adobe Photoshop *(It is clear to realize that at that time, I had no notion of UI and UX and that today, I still do not)*.
 
-<table>
+<table border="0">
   <tbody>
    <tr>
       <td>
