@@ -50,19 +50,18 @@ This project was developed with the following technologies:
 - [Typescript](https://www.typescriptlang.org/)
 - [Sass](https://sass-lang.com)
 
-## How to execute
-
+## Run
 
 ```bash
 $ git clone https://github.com/natzera/rocknroll-sugar-darling.git
 $ cd rocknroll-sugar-darling
 ```
 
-To start it, follow the steps below::
+To start it, follow the steps below:
 ```bash
 # Install dependencies
 $ npm install
 
-# sStart the project
+# Start the project
 $ npm run start
 ```
