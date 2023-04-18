@@ -1,10 +1,11 @@
 # Rock'n'roll Sugar Darling
-
-<img src="./public/../src/assets/logo-pethit.png" align="center" />
+<p align="center">
+  <img src="./public/../src/assets/logo-pethit.png" align="center" />
+</p>
 
 This application is very **special** for me because it was my first project that I created from scratch. In 2016, I won a studentship to study Production and Multimedia Technician at Senac Lapa Scipião and to conclude the Programming module, we had to develop and code this project.
 
-At that time, I developed this layout using Adobe Photoshop *(It's clear to realize that I had no notion of UI and UX, but I was really learning)*:
+At that time, I developed this layout using Adobe Photoshop *(It is clear to realize that at that time, I had no notion of UI and UX and that today, I still do not)*.
 
 <table>
   <tbody>
@@ -43,7 +44,25 @@ Rock'n'roll Sugar Darling is the third album by musician and actor [Thiago Pethi
 
 <img src="./public/cd-thiago-pethit.jpg" width="200" />
 
-## Tecnologies
-- React and Vite
-- Typescript
-- Sass
+## Technologies
+This project was developed with the following technologies:
+- [React](https://reactjs.org/) and [Vite](https://vitejs.dev)
+- [Typescript](https://www.typescriptlang.org/)
+- [Sass](https://sass-lang.com)
+
+## How to execute
+
+
+```bash
+$ git clone https://github.com/natzera/rocknroll-sugar-darling.git
+$ cd rocknroll-sugar-darling
+```
+
+To start it, follow the steps below::
+```bash
+# Install dependencies
+$ npm install
+
+# sStart the project
+$ npm run start
+```
