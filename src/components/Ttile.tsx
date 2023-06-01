@@ -6,9 +6,6 @@ interface TitleProps {
 } 
 
 export function Title({ name, isDark = false } : TitleProps) {
-  return(
-    <h1 className={`title ${isDark ? 'dark' : ''}`}>
-      {name}
-    </h1>
-  );
+  return <h1 className={`title ${isDark ? 'dark' : ''}`}>{name}</h1>;
+ ;
 }

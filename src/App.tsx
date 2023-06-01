@@ -102,10 +102,10 @@ function App({}: DATA) {
           <div className="agenda-content">
             {SHOWS.map((show) => {
               return(
-                <>
+                <div key={show.id}>
                   <Subtitle name={show.month}/>
                   <p>{show.info}<br/>{show.local}</p>
-                </>
+                </div>
               )
             })}
           </div>

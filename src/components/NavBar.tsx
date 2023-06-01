@@ -37,7 +37,7 @@ export const NAVITEMS = [
 export function NavBar() {
   const [mobile, setMobile] = useState(false);
 
-  return(
+  return (
     <nav>
       <div className="content-logo">
         <img src={logo} />
@@ -46,7 +46,7 @@ export function NavBar() {
         <ul className={mobile ? 'navbar-mobile' : 'nav-desktop'} onClick={() => setMobile(false)}>
           {NAVITEMS.map((item) => {
             return(
-              <li>
+              <li key={item.id}>
                 <Link onClick={() => setMobile(false)} key={item.id} to={item.path} spy={true} smooth={true} offset={0} duration={500}>{item.name}</Link>
               </li>
             )
