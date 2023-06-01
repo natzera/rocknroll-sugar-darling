@@ -5,7 +5,5 @@ interface SubtitleProps {
 }
 
 export function Subtitle(props: SubtitleProps) {
-  return(
-    <h2>{props.name}</h2>
-  ); 
+  return <h2>{props.name}</h2>; 
 }

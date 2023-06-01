@@ -1,5 +1,5 @@
 @import './theme';
-@import './media-queries';
+@import './variables';
 
 section.home {
   width: 100%;
@@ -16,21 +16,22 @@ section.home {
    margin-top: 100px;
   }
 
-  @include laptop-lg {
+  @include breakpoint(xl) {
     background-position: center;
+    
+    img {
+      width: 500px;
+    }
+  }
+
+  @include breakpoint(lg) {
 
     img {
       width: 500px;
     }
   }
 
-  @include laptop {
-    img {
-      width: 500px;
-    }
-  }
-
-  @include mobile {
+  @include breakpoint(sm) {
 
     img {
       margin-top: 230px;
@@ -38,7 +39,8 @@ section.home {
     }
   }
 
-  @include mobile-sm {
+  @include breakpoint(xs) {
+
     img {
       width: 260px;
     }
@@ -55,18 +57,17 @@ section.sobre {
   background-position: top;
   background-color: $primary;
   background-position-x: center;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 
-  @include laptop-lg {
+  @include breakpoint(xl) {
     background-size: 1000px;
     background-position-x: right;
   }
 
-  @include laptop {
+  @include breakpoint(lg) {
     background-image: none;
   }
 
@@ -79,15 +80,15 @@ section.sobre {
       width: 740px;
       height: auto;
 
-      @include laptop-lg {
+      @include breakpoint(xl) {
         padding: 0 60px;
       }
 
-      @include laptop {
+      @include breakpoint(lg) {
         width: 100%;
       }
 
-      @include mobile {
+      @include breakpoint(sm) {
         padding: 0 30px;
       }
     
@@ -99,7 +100,7 @@ section.sobre {
         font-weight: 400;
         text-align: justify;
 
-        @include mobile-sm {
+        @include breakpoint(sm) {
           font-size: 14px;
           line-height: 24px;
         }
@@ -110,7 +111,7 @@ section.sobre {
         line-height: 18px;
         color: $black;
 
-        @include mobile-sm {
+        @include breakpoint(sm) {
           font-size: 10px;
           line-height: 12px;
         }
@@ -133,7 +134,7 @@ section.musicas {
   background-position: center;
   background-position-x: center;
 
-  @include mobile {
+  @include breakpoint(sm) {
     background-position-x: right;
   }
 
@@ -147,11 +148,11 @@ section.musicas {
     justify-content: center;
     position: relative;
 
-    @include laptop-lg {
+    @include breakpoint(xl) {
       padding: 0 60px;
     }
 
-    @include mobile {
+        @include breakpoint(sm) {
       padding: 0 30px;
     }
 
@@ -160,11 +161,11 @@ section.musicas {
       align-items: flex-start;
       justify-content: space-evenly;
 
-      @include tablet {
+      @include breakpoint(md) {
         justify-content: space-around;
       }
 
-      @include mobile {     
+      @include breakpoint(sm) {
         gap: 3rem;
         flex-flow: wrap;
         justify-content: flex-start;
@@ -177,7 +178,7 @@ section.musicas {
         img {
           width: 250px;
 
-          @include mobile {
+          @include breakpoint(sm) {
             width: 180px;
           }
         }
@@ -188,7 +189,7 @@ section.musicas {
           line-height: 18px;
           padding-top: 10px;
 
-          @include mobile-sm {
+          @include breakpoint(xs) {
             font-size: 12px;
             line-height: 18px;
           }
@@ -202,7 +203,7 @@ section.musicas {
           font-size: 16px;
           line-height: 24px;
 
-          @include mobile-sm {
+          @include breakpoint(xs) {
             font-size: 14px;
             line-height: 24px;
           }
@@ -214,7 +215,7 @@ section.musicas {
           font-size: 16px;
           line-height: 24px;
 
-          @include mobile-sm {
+          @include breakpoint(xs) {
             font-size: 14px;
             line-height: 24px;
           }
@@ -239,7 +240,7 @@ section.agenda {
   background-position: center;
   background-position-x: center;
 
-  @include tablet {
+  @include breakpoint(md) {
     background-position-x: left;
   }
 
@@ -252,11 +253,11 @@ section.agenda {
     flex-direction: column;
     justify-content: center;
 
-    @include laptop-lg {
+    @include breakpoint(xl) {
       padding: 0 60px;
     }
 
-    @include mobile {
+    @include breakpoint(sm) {
       padding: 0 30px;
     }
 
@@ -268,7 +269,7 @@ section.agenda {
         margin-bottom: 20px;
         text-transform: uppercase;
 
-        @include mobile-sm {
+        @include breakpoint(xs) {
           font-size: 14px;
           line-height: 24px;
         }
