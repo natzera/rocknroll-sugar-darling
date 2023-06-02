@@ -3,9 +3,9 @@
   <img src="./public/../src/assets/logo-pethit.png" align="center" />
 </p>
 
-This application is very **special** for me because it was my first project that I created from scratch. In 2016, I won a studentship to study Production and Multimedia Technician at Senac Lapa Scipião and to conclude the Programming module, we had to develop and code this project.
+This application is very **special** for me because it was my first project that I created from scratch. In 2016, I won a studentship to study Production and Multimedia Technician at Senac Lapa Scipião and to conclude the Programming module we had to develop and code this project.
 
-At that time, I developed this layout using Adobe Photoshop *(It is clear to realize that at that time, I had no notion of UI and UX and that today, I still do not)*.
+At that time, I developed this layout using Adobe Photoshop *(It is clear to realize that at that time, I had no clue of UI and UX and that today, I still do not)*.
 
 <table border="0">
   <tbody>
