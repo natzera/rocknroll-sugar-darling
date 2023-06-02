@@ -32,9 +32,7 @@ At that time, I developed this layout using Adobe Photoshop *(It is clear to rea
   </tbody>
 </table>
 
-
-
-You can check my old layout on Behance [here](https://www.behance.net/gallery/78586015/SITE-THIAGO-PETHIT-2017). 
+You can check the new application [here](https://natzera.github.io/rocknroll-sugar-darling/), and also you can check my old layout on Behance [here](https://www.behance.net/gallery/78586015/SITE-THIAGO-PETHIT-2017). 
 
 Unfortunately, I didn't find the code that I had developed in HTML, CSS and JavaScript, however, this project was the crucial point for me to start falling in love with development and programming, and since then I have never stopped. After six years, I decided to remake this application with new layout, new code and tecnologies. 
 
